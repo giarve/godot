@@ -98,6 +98,12 @@
 		<member name="fog_color" type="Color" setter="set_fog_color" getter="get_fog_color" default="Color( 0.5, 0.6, 0.7, 1 )">
 			The fog's [Color].
 		</member>
+		<member name="fog_exponential_enabled" type="bool" setter="set_fog_exponential_enabled" getter="is_fog_exponential_enabled" default="true">
+			If [code]true[/code], the exponential fog effect is enabled. When enabled, fog will appear depending on distance from the camera.
+		</member>
+		<member name="fog_exponential_density" type="float" setter="set_fog_exponential_density" getter="get_fog_exponential_density" default="0.01">
+			The fog's density when exponential fog is enabled. This value is equivalent to the alpha value in fog's [Color] but allows the combination of both.
+		</member>
 		<member name="fog_depth_begin" type="float" setter="set_fog_depth_begin" getter="get_fog_depth_begin" default="10.0">
 			The fog's depth starting distance from the camera.
 		</member>
